@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Apple Clone",
+    "description": "Responsive website clone of Apple Home page",
+    "href": "https://apple-clone-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/apple-clone"
+  },
+  {
+    "title": "Calculator",
+    "description": "A scientific calculator fully responsive and includes a dark/light mode toggle.",
+    "href": "https://calculator-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/calculator"
+  },
+  {
+    "title": "Countdown",
+    "description": "Countdown challenge from Frontend Mentor that features responsive design, hover states, and card animation.",
+    "href": "https://countdown-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/launch-countdown-timer-main"
+  },
+  {
+    "title": "Restaurant Delivery",
+    "description": "Final project from Jonas Schmedtmann's Udemy course the challenge demonstrates the skills learned in the course.",
+    "href": "https://omnifood-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/omnifood"
+  },
+  {
+    "title": "Survey Form",
+    "description": "Certification project, required for the FreeCodeCamp Responsive Web Design course.",
+    "href": "https://surveyform-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/freecodecamp-form"
+  },
+  {
+    "title": "Google Clone",
+    "description": "Google clone with search functionality and displays the user's location and language.",
+    "href": "https://google-camilaramos.netlify.app",
+    "githref": "ttps://github.com/cseemannr/google-clone"
+  },
+  {
+    "title": "Manage landing page",
+    "description": "Frontend Mentor challenge with responsive design, hover states, testimonial slider, and a message when email address is not formatted correctly.",
+    "href": "https://manage-landing-page-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/manage-landing-page-master"
+  },
+  {
+    "title": "Password Generator",
+    "description": "Password generator project features uppercase, number, or symbol options.",
+    "href": "https://password-generator-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/password-generator"
+  },
+  {
+    "title": "Personal Portfolio Webpage",
+    "description": "Certification project required for the FreeCodeCamp Responsive Web Design course.",
+    "href": "https://freecodecamp-portfolio-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/freecodecamp-portfolio"
+  },
+  {
+    "title": "Sallve Clone",
+    "description": "Skincare website clone",
+    "href": "https://sallve-clone-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/sallve"
+  },
+  {
+    "title": "Space Travel Website",
+    "description": "FrontEnd Mentor Space Travel Challenge.",
+    "href": "https://space-travel-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/space-travel-website"
+  },
+  {
+    "title": "To do List",
+    "description": "Frontend Mentor Challenge with light and dark mode, localStorage, ability to filter, delete and reorder items.",
+    "href": "https://todolist-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/to-do-list"
+  },
+  {
+    "title": "Your Age",
+    "description": "Project to calculate a person's age in years, months, days, minutes, and seconds.",
+    "href": "https://your-age-camilaramos.netlify.app",
+    "githref": "https://github.com/cseemannr/your-age"
+  }
+]

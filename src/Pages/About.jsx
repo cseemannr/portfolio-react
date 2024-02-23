@@ -4,7 +4,7 @@ import ProfilePicture from "../images/camila.jpg";
 
 export default function About() {
   return (
-    <Container className="about-container">
+    <Container className="about-container big-margin">
       <img className="d-block" src={ProfilePicture} alt={"Camila Ramos"} />
 
       <div className="about-text">

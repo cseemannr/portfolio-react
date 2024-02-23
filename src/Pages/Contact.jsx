@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, ListGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFreeCodeCamp,
@@ -9,20 +9,24 @@ import {
 
 export default function Contact() {
   return (
-    <Container>
-      <Button>
-        <a
-          class="btn mailto"
-          href="mailto:camilaseemannramos@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Say Hello
-        </a>
-      </Button>
-
-      <ul class="list-icons">
-        <li>
+    <Container className="text-center contact-container big-margin">
+      <ListGroup>
+        <ListGroup.Item>
+          <Button variant="dark" size="lg">
+            <a
+              class="btn mailto"
+              href="mailto:camilaseemannramos@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Say Hello:
+            </a>
+          </Button>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <p>camilaseemannramos@gmail.com</p>
+        </ListGroup.Item>
+        <ListGroup.Item>
           <a
             href="https://www.linkedin.com/in/cseemann/"
             target="_blank"
@@ -30,8 +34,6 @@ export default function Contact() {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-        </li>
-        <li>
           <a
             href="https://github.com/cseemannr"
             target="_blank"
@@ -39,8 +41,6 @@ export default function Contact() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-        </li>
-        <li>
           <a
             href="https://www.freecodecamp.org/cmlsmnn"
             target="_blank"
@@ -48,8 +48,8 @@ export default function Contact() {
           >
             <FontAwesomeIcon icon={faFreeCodeCamp} />
           </a>
-        </li>
-      </ul>
+        </ListGroup.Item>
+      </ListGroup>
     </Container>
   );
 }

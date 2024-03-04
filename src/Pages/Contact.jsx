@@ -7,19 +7,24 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+import "../i18n";
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
-    <Container className="text-center contact-container big-margin">
+    <Container className="contact-container text-center">
       <ListGroup>
         <ListGroup.Item>
           <Button variant="dark" size="lg">
             <a
-              class="btn mailto"
+              className="btn"
               href="mailto:camilaseemannramos@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Say Hello:
+              {t("contact")}
             </a>
           </Button>
         </ListGroup.Item>

@@ -6,16 +6,32 @@
   box-sizing: border-box;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bs-light);
+  color: var(--bs-gray-dark);
+}
+
+.app-container.dark-theme {
+  background-color: var(--bs-gray-600);
+  color: var(--bs-light);
+}
+
 body {
   font-family: "Karla", sans-serif !important;
-  background-color: var(--bs-light) !important;
-  color: var(--bs-gray-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 nav {
   background-color: var(--bs-gray-200) !important;
+}
+
+.app-container.dark-theme nav {
+  background-color: var(--bs-gray-700) !important;
+  color: var(--bs-gray-200);
 }
 
 footer {
@@ -27,6 +43,11 @@ footer {
   background-color: var(--bs-gray-200);
   color: var(--bs-gray-600);
   margin-top: auto;
+}
+
+.app-container.dark-theme footer {
+  color: var(--bs-gray-300);
+  background-color: var(--bs-gray-700);
 }
 
 a:link,
@@ -67,6 +88,12 @@ h2,
   overflow: hidden;
 }
 
+.carousel-container,
+.about-container,
+.contact-container {
+  margin-bottom: 6rem;
+}
+
 .carousel-caption {
   width: 100%;
   background: rgba(248, 249, 250, 0.8);
@@ -77,7 +104,7 @@ h2,
   padding: 1rem !important;
 }
 
-.carousel-links a:link {
+.carousel-links a {
   margin: 0 5px;
 }
 
@@ -127,8 +154,47 @@ h2,
   border: none;
 }
 
-#root {
+.dropdown-item:active,
+.dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.toggle-btn {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 34px;
+  height: 20px;
+  background-color: var(--bs-gray-500);
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.3s ease;
+  margin: 1rem 0 0 auto;
+  box-shadow: -1px 1px 5px -1px rgba(0, 0, 0, 0.4) inset;
+}
+
+.toggle-btn:checked {
+  background-color: var(--bs-gray-200);
+}
+
+.toggle-btn::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--bs-gray-200);
+  background-color: var(--bs-light);
+  transition: all 0.3s ease;
+  box-shadow: -1px 1px 2px -1px rgba(0, 0, 0, 0.4) inset;
+}
+
+.toggle-btn:checked::after {
+  left: 16px;
+  background-color: var(--bs-gray-600);
 }

@@ -3,25 +3,37 @@ import { Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import projects from "../projects.json";
+import ProjectsDetails from "../ProjectsDetails.json";
+
+import "../i18n";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
   const images = require.context("../images/projects", true);
   const imageList = images.keys().map((image) => images(image));
 
+  const { t } = useTranslation();
+  const projects = t("projects");
+
   const allCarouselItens = imageList.map((image, index) => {
     const imageInfo = projects[index];
+    const projectDetail = ProjectsDetails[index];
+
     return (
-      <Carousel.Item>
+      <Carousel.Item key={index}>
         <img src={image} alt={imageInfo.title} />
         <Carousel.Caption>
           <h3>{imageInfo.title}</h3>
           <div className="carousel-links">
-            <a href={imageInfo.href} target="_blank" rel="noopener noreferrer">
+            <a
+              href={projectDetail.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faUpRightFromSquare} />
             </a>
             <a
-              href={imageInfo.githref}
+              href={projectDetail.githref}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -33,8 +45,6 @@ export default function Projects() {
       </Carousel.Item>
     );
   });
-
-  console.log(allCarouselItens);
 
   return (
     <div className="carousel-container text-center">

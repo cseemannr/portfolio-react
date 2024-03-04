@@ -72,6 +72,12 @@
     "githref": "https://github.com/cseemannr/to-do-list"
   },
   {
+    "title": "React Weather App",
+    "description": "Weather application built with React, Axios, and Bootstrap, integrated with the Open Weather API",
+    "href": "https://react-weather-app-camilaramos.netlify.app/",
+    "githref": "https://github.com/cseemannr/weather-app-react"
+  },
+  {
     "title": "Your Age",
     "description": "Project to calculate a person's age in years, months, days, minutes, and seconds.",
     "href": "https://your-age-camilaramos.netlify.app",

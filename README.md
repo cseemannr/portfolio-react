@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# My Frontend Development Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my frontend development portfolio! This project showcases my skills and projects in the world of web development. The portfolio is built using Create React App, incorporating various technologies and features to provide a dynamic and user-friendly experience.
+
+## Technologies Used:
+
+- React
+- React-Bootstrap
+- React Router
+- React-i18next: The website is available in both English and Portuguese.
+- React and custom Hooks: useState, createContext, useContext, useEffect and a custom hook called useTheme to facilitate the implementation of Light and Dark Theme.
+- Light and Dark Theme with localStorage to save the theme for future visit.
+
+![Logo](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Available Scripts
 
